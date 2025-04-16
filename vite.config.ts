@@ -19,10 +19,8 @@ export default defineConfig({
     port: 5173,
     allowedHosts: true,
     hmr: {
-      clientPort: 443, // Используем HTTPS порт
-      host: 'preview--commercial-property-rental.poehali.dev', // Указываем ваш домен
-      protocol: 'wss', // Используем безопасное WebSocket соединение
-      overlay: false
+      overlay: false, // Отключаем оверлей ошибок
+      clientPort: null // Позволяет клиенту использовать тот же порт, что и страница
     }
   },
 });
